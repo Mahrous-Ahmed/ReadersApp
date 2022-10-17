@@ -20,7 +20,7 @@ public class SignUpTest extends BaseTest {
 
     @Test
     public void addUserWithValidData() throws SQLException, InterruptedException {
-        String email = "mahrous1@nagwa.com";
+        String email = "mahrous3@nagwa.com";
         VerificationCodeScreen verificationCodeScreen = signUpScreen.addUser("7ours", "A" , email);
         String Code = DataBase.getConfirmationCodeFromDB("'"+email+"'");
         verificationCodeScreen.addDigits(Code);

@@ -1,9 +1,10 @@
 package Screens;
 
+import Models.HomeModel;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import sun.java2d.cmm.Profile;
 
 public class HomeScreen extends CorePage{
     @AndroidFindBy(id = "imgUser")
@@ -51,6 +52,10 @@ public class HomeScreen extends CorePage{
 
     public String getSubscribeNowText(){
       return   getText(subscribeButtonCard);
+    }
+
+    private void homeService(){
+
     }
 
 
